@@ -1,0 +1,149 @@
+body {
+	background-color: #f5f5f5;
+	font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Lora", serif;
+	letter-spacing: 0.1em;
+	font-size: 45px;
+	padding-bottom: 0.2em;
+}
+
+#subtitle {
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.3em;
+	color: rgb(68, 0, 128);
+}
+
+h2 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+h3 {
+	color: rgb(68, 0, 128);
+}
+
+input,
+textarea {
+	width: 92%;
+	margin-top: 0.5em;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 1em;
+}
+
+#submitButton {
+	width: 100%;
+	background-color: rgb(68, 0, 128);
+	color: white;
+	margin-top: 1em;
+}
+
+.recipes {
+	display: flex;
+	justify-content: space-around;
+}
+
+.add-recipe {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	height: fit-content;
+	margin: 2em;
+	min-width: 250px;
+	max-width: 400px;
+}
+
+.recipe {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	width: 650px;
+	margin: 2em;
+}
+
+img {
+	width: 650px;
+	border-radius: 8px;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+}
+
+.header span {
+	width: 500px;
+}
+
+.removeAllButton {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.editDeletebuttons {
+	margin: auto;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#submitButton:hover,
+button:hover {
+	cursor: pointer;
+}
+
+.material-symbols-outlined {
+	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+	margin: 0.2em;
+	height: fit-content;
+}
+
+.error {
+	color: red;
+	font-size: small;
+}
+
+/* Media query for smaller screens ipad mini*/
+@media (max-width: 768px) {
+	body {
+		font-size: 10px;
+	}
+
+	.recipes {
+		display: flex;
+		flex-direction: column; /* Set flex direction to column */
+		align-items: center;
+	}
+
+	.recipe {
+		width: 380px;
+	}
+
+	img {
+		width: 380px;
+	}
+}
+/* Media query for smaller screens iphone se */
+@media (max-width: 375px) {
+	body {
+		font-size: 8px;
+	}
+
+	.recipe {
+		width: 280px;
+	}
+
+	img {
+		width: 280px;
+	}
+}
